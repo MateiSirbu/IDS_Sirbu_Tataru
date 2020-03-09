@@ -38,7 +38,6 @@ def findNaN(mat: np.array) -> tuple:
 
     """
     args = np.argwhere(np.isnan(mat))
-    """ TODO: extract lines and columns from np.argwhere """
     lines = [arg[0] for arg in args]
     columns = [arg[1] for arg in args]
     return np.unique(lines), np.unique(columns)
