@@ -1,0 +1,391 @@
+
+<h1><u>Boston Housing</u></h1>
+<style  type="text/css" >
+    #T_4645db28_951c_11ea_899b_acde48001122row5_col5 {
+            background-color:  green;
+            background-color:  green;
+        }    #T_4645db28_951c_11ea_899b_acde48001122row5_col7 {
+            background-color:  green;
+            background-color:  green;
+        }    #T_4645db28_951c_11ea_899b_acde48001122row5_col9 {
+            background-color:  green;
+            background-color:  green;
+        }    #T_4645db28_951c_11ea_899b_acde48001122row9_col9 {
+            background-color:  red;
+            background-color:  red;
+        }    #T_4645db28_951c_11ea_899b_acde48001122row11_col10 {
+            background-color:  red;
+            background-color:  red;
+        }    #T_4645db28_951c_11ea_899b_acde48001122row12_col5 {
+            background-color:  red;
+            background-color:  red;
+        }    #T_4645db28_951c_11ea_899b_acde48001122row12_col7 {
+            background-color:  red;
+            background-color:  red;
+        }    #T_4645db28_951c_11ea_899b_acde48001122row14_col6 {
+            background-color:  red;
+            background-color:  red;
+        }    #T_4645db28_951c_11ea_899b_acde48001122row14_col8 {
+            background-color:  red;
+            background-color:  red;
+        }    #T_4645db28_951c_11ea_899b_acde48001122row20_col6 {
+            background-color:  green;
+            background-color:  green;
+        }    #T_4645db28_951c_11ea_899b_acde48001122row20_col8 {
+            background-color:  green;
+            background-color:  green;
+        }    #T_4645db28_951c_11ea_899b_acde48001122row20_col10 {
+            background-color:  green;
+            background-color:  green;
+        }</style><table id="T_4645db28_951c_11ea_899b_acde48001122" ><thead>    <tr>        <th class="blank level0" ></th>        <th class="col_heading level0 col0" >Model_name</th>        <th class="col_heading level0 col1" >Fold</th>        <th class="col_heading level0 col2" >Search_strategy</th>        <th class="col_heading level0 col3" >fit_time</th>        <th class="col_heading level0 col4" >score_time</th>        <th class="col_heading level0 col5" >test_mean_absolute_error</th>        <th class="col_heading level0 col6" >train_mean_absolute_error</th>        <th class="col_heading level0 col7" >test_mean_squared_error</th>        <th class="col_heading level0 col8" >train_mean_squared_error</th>        <th class="col_heading level0 col9" >test_median_absolute_error</th>        <th class="col_heading level0 col10" >train_median_absolute_error</th>    </tr></thead><tbody>
+                <tr>
+                        <th id="T_4645db28_951c_11ea_899b_acde48001122level0_row0" class="row_heading level0 row0" >0</th>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row0_col0" class="data row0 col0" >Lasso</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row0_col1" class="data row0 col1" >1</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row0_col2" class="data row0 col2" >RandomizedSearchCV</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row0_col3" class="data row0 col3" >0.310655</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row0_col4" class="data row0 col4" >0.000848</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row0_col5" class="data row0 col5" >3.035318</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row0_col6" class="data row0 col6" >3.843045</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row0_col7" class="data row0 col7" >15.064119</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row0_col8" class="data row0 col8" >29.798520</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row0_col9" class="data row0 col9" >2.538048</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row0_col10" class="data row0 col10" >2.749917</td>
+            </tr>
+            <tr>
+                        <th id="T_4645db28_951c_11ea_899b_acde48001122level0_row1" class="row_heading level0 row1" >1</th>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row1_col0" class="data row1 col0" >Lasso</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row1_col1" class="data row1 col1" >2</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row1_col2" class="data row1 col2" >RandomizedSearchCV</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row1_col3" class="data row1 col3" >0.300539</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row1_col4" class="data row1 col4" >0.000585</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row1_col5" class="data row1 col5" >4.086474</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row1_col6" class="data row1 col6" >3.588598</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row1_col7" class="data row1 col7" >33.261663</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row1_col8" class="data row1 col8" >27.136945</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row1_col9" class="data row1 col9" >2.481359</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row1_col10" class="data row1 col10" >2.573424</td>
+            </tr>
+            <tr>
+                        <th id="T_4645db28_951c_11ea_899b_acde48001122level0_row2" class="row_heading level0 row2" >2</th>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row2_col0" class="data row2 col0" >Lasso</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row2_col1" class="data row2 col1" >3</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row2_col2" class="data row2 col2" >RandomizedSearchCV</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row2_col3" class="data row2 col3" >0.282761</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row2_col4" class="data row2 col4" >0.000578</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row2_col5" class="data row2 col5" >5.185735</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row2_col6" class="data row2 col6" >3.460764</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row2_col7" class="data row2 col7" >53.226085</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row2_col8" class="data row2 col8" >26.244872</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row2_col9" class="data row2 col9" >3.494891</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row2_col10" class="data row2 col10" >2.375632</td>
+            </tr>
+            <tr>
+                        <th id="T_4645db28_951c_11ea_899b_acde48001122level0_row3" class="row_heading level0 row3" >3</th>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row3_col0" class="data row3 col0" >Lasso</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row3_col1" class="data row3 col1" >4</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row3_col2" class="data row3 col2" >RandomizedSearchCV</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row3_col3" class="data row3 col3" >0.283419</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row3_col4" class="data row3 col4" >0.000569</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row3_col5" class="data row3 col5" >5.436375</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row3_col6" class="data row3 col6" >2.751116</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row3_col7" class="data row3 col7" >77.188161</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row3_col8" class="data row3 col8" >13.717940</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row3_col9" class="data row3 col9" >3.063159</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row3_col10" class="data row3 col10" >2.171184</td>
+            </tr>
+            <tr>
+                        <th id="T_4645db28_951c_11ea_899b_acde48001122level0_row4" class="row_heading level0 row4" >4</th>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row4_col0" class="data row4 col0" >Lasso</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row4_col1" class="data row4 col1" >5</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row4_col2" class="data row4 col2" >RandomizedSearchCV</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row4_col3" class="data row4 col3" >0.283513</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row4_col4" class="data row4 col4" >0.000583</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row4_col5" class="data row4 col5" >4.385414</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row4_col6" class="data row4 col6" >3.360477</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row4_col7" class="data row4 col7" >27.992657</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row4_col8" class="data row4 col8" >23.781909</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row4_col9" class="data row4 col9" >4.288170</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row4_col10" class="data row4 col10" >2.289129</td>
+            </tr>
+            <tr>
+                        <th id="T_4645db28_951c_11ea_899b_acde48001122level0_row5" class="row_heading level0 row5" >5</th>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row5_col0" class="data row5 col0" >BayesianRidge</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row5_col1" class="data row5 col1" >1</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row5_col2" class="data row5 col2" >RandomizedSearchCV</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row5_col3" class="data row5 col3" >0.072581</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row5_col4" class="data row5 col4" >0.000663</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row5_col5" class="data row5 col5" >2.458269</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row5_col6" class="data row5 col6" >3.641981</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row5_col7" class="data row5 col7" >11.581165</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row5_col8" class="data row5 col8" >26.031032</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row5_col9" class="data row5 col9" >1.692350</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row5_col10" class="data row5 col10" >2.712542</td>
+            </tr>
+            <tr>
+                        <th id="T_4645db28_951c_11ea_899b_acde48001122level0_row6" class="row_heading level0 row6" >6</th>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row6_col0" class="data row6 col0" >BayesianRidge</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row6_col1" class="data row6 col1" >2</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row6_col2" class="data row6 col2" >RandomizedSearchCV</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row6_col3" class="data row6 col3" >0.053896</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row6_col4" class="data row6 col4" >0.000751</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row6_col5" class="data row6 col5" >3.639642</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row6_col6" class="data row6 col6" >3.349663</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row6_col7" class="data row6 col7" >24.756527</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row6_col8" class="data row6 col8" >23.309660</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row6_col9" class="data row6 col9" >2.587550</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row6_col10" class="data row6 col10" >2.419532</td>
+            </tr>
+            <tr>
+                        <th id="T_4645db28_951c_11ea_899b_acde48001122level0_row7" class="row_heading level0 row7" >7</th>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row7_col0" class="data row7 col0" >BayesianRidge</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row7_col1" class="data row7 col1" >3</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row7_col2" class="data row7 col2" >RandomizedSearchCV</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row7_col3" class="data row7 col3" >0.057489</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row7_col4" class="data row7 col4" >0.000629</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row7_col5" class="data row7 col5" >3.957304</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row7_col6" class="data row7 col6" >3.252824</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row7_col7" class="data row7 col7" >30.558525</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row7_col8" class="data row7 col8" >23.237184</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row7_col9" class="data row7 col9" >2.688478</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row7_col10" class="data row7 col10" >2.203321</td>
+            </tr>
+            <tr>
+                        <th id="T_4645db28_951c_11ea_899b_acde48001122level0_row8" class="row_heading level0 row8" >8</th>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row8_col0" class="data row8 col0" >BayesianRidge</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row8_col1" class="data row8 col1" >4</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row8_col2" class="data row8 col2" >RandomizedSearchCV</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row8_col3" class="data row8 col3" >0.069999</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row8_col4" class="data row8 col4" >0.000619</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row8_col5" class="data row8 col5" >5.510999</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row8_col6" class="data row8 col6" >2.722108</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row8_col7" class="data row8 col7" >79.670062</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row8_col8" class="data row8 col8" >13.159449</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row8_col9" class="data row8 col9" >2.768604</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row8_col10" class="data row8 col10" >2.163332</td>
+            </tr>
+            <tr>
+                        <th id="T_4645db28_951c_11ea_899b_acde48001122level0_row9" class="row_heading level0 row9" >9</th>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row9_col0" class="data row9 col0" >BayesianRidge</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row9_col1" class="data row9 col1" >5</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row9_col2" class="data row9 col2" >RandomizedSearchCV</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row9_col3" class="data row9 col3" >0.055200</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row9_col4" class="data row9 col4" >0.000611</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row9_col5" class="data row9 col5" >4.409170</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row9_col6" class="data row9 col6" >3.333501</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row9_col7" class="data row9 col7" >28.372947</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row9_col8" class="data row9 col8" >23.309659</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row9_col9" class="data row9 col9" >4.465688</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row9_col10" class="data row9 col10" >2.309659</td>
+            </tr>
+            <tr>
+                        <th id="T_4645db28_951c_11ea_899b_acde48001122level0_row10" class="row_heading level0 row10" >10</th>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row10_col0" class="data row10 col0" >SVR</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row10_col1" class="data row10 col1" >1</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row10_col2" class="data row10 col2" >RandomizedSearchCV</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row10_col3" class="data row10 col3" >0.136864</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row10_col4" class="data row10 col4" >0.001457</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row10_col5" class="data row10 col5" >4.192632</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row10_col6" class="data row10 col6" >5.618406</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row10_col7" class="data row10 col7" >30.046633</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row10_col8" class="data row10 col8" >73.946250</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row10_col9" class="data row10 col9" >3.639465</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row10_col10" class="data row10 col10" >3.701679</td>
+            </tr>
+            <tr>
+                        <th id="T_4645db28_951c_11ea_899b_acde48001122level0_row11" class="row_heading level0 row11" >11</th>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row11_col0" class="data row11 col0" >SVR</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row11_col1" class="data row11 col1" >2</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row11_col2" class="data row11 col2" >RandomizedSearchCV</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row11_col3" class="data row11 col3" >0.130222</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row11_col4" class="data row11 col4" >0.001513</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row11_col5" class="data row11 col5" >6.629958</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row11_col6" class="data row11 col6" >5.615544</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row11_col7" class="data row11 col7" >94.382722</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row11_col8" class="data row11 col8" >68.928251</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row11_col9" class="data row11 col9" >3.786341</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row11_col10" class="data row11 col10" >3.712423</td>
+            </tr>
+            <tr>
+                        <th id="T_4645db28_951c_11ea_899b_acde48001122level0_row12" class="row_heading level0 row12" >12</th>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row12_col0" class="data row12 col0" >SVR</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row12_col1" class="data row12 col1" >3</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row12_col2" class="data row12 col2" >RandomizedSearchCV</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row12_col3" class="data row12 col3" >0.131707</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row12_col4" class="data row12 col4" >0.001599</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row12_col5" class="data row12 col5" >7.943106</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row12_col6" class="data row12 col6" >4.745354</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row12_col7" class="data row12 col7" >132.988945</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row12_col8" class="data row12 col8" >55.983782</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row12_col9" class="data row12 col9" >4.056780</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row12_col10" class="data row12 col10" >3.147712</td>
+            </tr>
+            <tr>
+                        <th id="T_4645db28_951c_11ea_899b_acde48001122level0_row13" class="row_heading level0 row13" >13</th>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row13_col0" class="data row13 col0" >SVR</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row13_col1" class="data row13 col1" >4</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row13_col2" class="data row13 col2" >RandomizedSearchCV</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row13_col3" class="data row13 col3" >0.129353</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row13_col4" class="data row13 col4" >0.001502</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row13_col5" class="data row13 col5" >6.041042</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row13_col6" class="data row13 col6" >5.108304</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row13_col7" class="data row13 col7" >82.238414</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row13_col8" class="data row13 col8" >61.378929</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row13_col9" class="data row13 col9" >4.404465</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row13_col10" class="data row13 col10" >3.095978</td>
+            </tr>
+            <tr>
+                        <th id="T_4645db28_951c_11ea_899b_acde48001122level0_row14" class="row_heading level0 row14" >14</th>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row14_col0" class="data row14 col0" >SVR</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row14_col1" class="data row14 col1" >5</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row14_col2" class="data row14 col2" >RandomizedSearchCV</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row14_col3" class="data row14 col3" >0.128382</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row14_col4" class="data row14 col4" >0.001331</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row14_col5" class="data row14 col5" >4.080288</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row14_col6" class="data row14 col6" >5.673193</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row14_col7" class="data row14 col7" >26.403907</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row14_col8" class="data row14 col8" >78.736578</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row14_col9" class="data row14 col9" >3.502766</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row14_col10" class="data row14 col10" >3.666738</td>
+            </tr>
+            <tr>
+                        <th id="T_4645db28_951c_11ea_899b_acde48001122level0_row15" class="row_heading level0 row15" >15</th>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row15_col0" class="data row15 col0" >ElasticNet</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row15_col1" class="data row15 col1" >1</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row15_col2" class="data row15 col2" >RandomizedSearchCV</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row15_col3" class="data row15 col3" >0.035721</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row15_col4" class="data row15 col4" >0.000600</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row15_col5" class="data row15 col5" >3.009716</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row15_col6" class="data row15 col6" >3.832130</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row15_col7" class="data row15 col7" >14.876532</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row15_col8" class="data row15 col8" >29.615245</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row15_col9" class="data row15 col9" >2.489595</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row15_col10" class="data row15 col10" >2.750463</td>
+            </tr>
+            <tr>
+                        <th id="T_4645db28_951c_11ea_899b_acde48001122level0_row16" class="row_heading level0 row16" >16</th>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row16_col0" class="data row16 col0" >ElasticNet</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row16_col1" class="data row16 col1" >2</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row16_col2" class="data row16 col2" >RandomizedSearchCV</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row16_col3" class="data row16 col3" >0.033324</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row16_col4" class="data row16 col4" >0.000597</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row16_col5" class="data row16 col5" >3.895006</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row16_col6" class="data row16 col6" >3.484463</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row16_col7" class="data row16 col7" >29.888683</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row16_col8" class="data row16 col8" >25.590314</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row16_col9" class="data row16 col9" >2.340087</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row16_col10" class="data row16 col10" >2.565406</td>
+            </tr>
+            <tr>
+                        <th id="T_4645db28_951c_11ea_899b_acde48001122level0_row17" class="row_heading level0 row17" >17</th>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row17_col0" class="data row17 col0" >ElasticNet</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row17_col1" class="data row17 col1" >3</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row17_col2" class="data row17 col2" >RandomizedSearchCV</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row17_col3" class="data row17 col3" >0.031472</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row17_col4" class="data row17 col4" >0.000584</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row17_col5" class="data row17 col5" >5.119052</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row17_col6" class="data row17 col6" >3.439054</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row17_col7" class="data row17 col7" >51.861121</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row17_col8" class="data row17 col8" >26.013857</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row17_col9" class="data row17 col9" >3.506936</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row17_col10" class="data row17 col10" >2.415317</td>
+            </tr>
+            <tr>
+                        <th id="T_4645db28_951c_11ea_899b_acde48001122level0_row18" class="row_heading level0 row18" >18</th>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row18_col0" class="data row18 col0" >ElasticNet</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row18_col1" class="data row18 col1" >4</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row18_col2" class="data row18 col2" >RandomizedSearchCV</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row18_col3" class="data row18 col3" >0.032813</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row18_col4" class="data row18 col4" >0.000633</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row18_col5" class="data row18 col5" >5.389243</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row18_col6" class="data row18 col6" >2.756141</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row18_col7" class="data row18 col7" >74.478903</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row18_col8" class="data row18 col8" >13.804993</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row18_col9" class="data row18 col9" >3.075021</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row18_col10" class="data row18 col10" >2.193361</td>
+            </tr>
+            <tr>
+                        <th id="T_4645db28_951c_11ea_899b_acde48001122level0_row19" class="row_heading level0 row19" >19</th>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row19_col0" class="data row19 col0" >ElasticNet</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row19_col1" class="data row19 col1" >5</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row19_col2" class="data row19 col2" >RandomizedSearchCV</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row19_col3" class="data row19 col3" >0.031587</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row19_col4" class="data row19 col4" >0.000588</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row19_col5" class="data row19 col5" >3.425298</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row19_col6" class="data row19 col6" >3.711596</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row19_col7" class="data row19 col7" >19.874020</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row19_col8" class="data row19 col8" >27.300789</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row19_col9" class="data row19 col9" >3.177395</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row19_col10" class="data row19 col10" >2.560129</td>
+            </tr>
+            <tr>
+                        <th id="T_4645db28_951c_11ea_899b_acde48001122level0_row20" class="row_heading level0 row20" >20</th>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row20_col0" class="data row20 col0" >DecisionTreeRegressor</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row20_col1" class="data row20 col1" >1</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row20_col2" class="data row20 col2" >RandomizedSearchCV</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row20_col3" class="data row20 col3" >0.117792</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row20_col4" class="data row20 col4" >0.000628</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row20_col5" class="data row20 col5" >2.642044</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row20_col6" class="data row20 col6" >0.777253</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row20_col7" class="data row20 col7" >11.907856</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row20_col8" class="data row20 col8" >1.438408</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row20_col9" class="data row20 col9" >2.066746</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row20_col10" class="data row20 col10" >0.469474</td>
+            </tr>
+            <tr>
+                        <th id="T_4645db28_951c_11ea_899b_acde48001122level0_row21" class="row_heading level0 row21" >21</th>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row21_col0" class="data row21 col0" >DecisionTreeRegressor</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row21_col1" class="data row21 col1" >2</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row21_col2" class="data row21 col2" >RandomizedSearchCV</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row21_col3" class="data row21 col3" >0.079965</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row21_col4" class="data row21 col4" >0.000614</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row21_col5" class="data row21 col5" >3.819336</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row21_col6" class="data row21 col6" >3.658659</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row21_col7" class="data row21 col7" >25.777347</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row21_col8" class="data row21 col8" >26.246500</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row21_col9" class="data row21 col9" >2.929687</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row21_col10" class="data row21 col10" >2.770313</td>
+            </tr>
+            <tr>
+                        <th id="T_4645db28_951c_11ea_899b_acde48001122level0_row22" class="row_heading level0 row22" >22</th>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row22_col0" class="data row22 col0" >DecisionTreeRegressor</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row22_col1" class="data row22 col1" >3</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row22_col2" class="data row22 col2" >RandomizedSearchCV</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row22_col3" class="data row22 col3" >0.079865</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row22_col4" class="data row22 col4" >0.000623</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row22_col5" class="data row22 col5" >3.902986</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row22_col6" class="data row22 col6" >1.261149</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row22_col7" class="data row22 col7" >26.147605</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row22_col8" class="data row22 col8" >2.981810</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row22_col9" class="data row22 col9" >2.899000</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row22_col10" class="data row22 col10" >0.922222</td>
+            </tr>
+            <tr>
+                        <th id="T_4645db28_951c_11ea_899b_acde48001122level0_row23" class="row_heading level0 row23" >23</th>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row23_col0" class="data row23 col0" >DecisionTreeRegressor</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row23_col1" class="data row23 col1" >4</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row23_col2" class="data row23 col2" >RandomizedSearchCV</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row23_col3" class="data row23 col3" >0.162969</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row23_col4" class="data row23 col4" >0.000684</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row23_col5" class="data row23 col5" >4.227167</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row23_col6" class="data row23 col6" >2.590354</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row23_col7" class="data row23 col7" >53.326858</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row23_col8" class="data row23 col8" >10.992454</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row23_col9" class="data row23 col9" >2.613333</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row23_col10" class="data row23 col10" >1.993333</td>
+            </tr>
+            <tr>
+                        <th id="T_4645db28_951c_11ea_899b_acde48001122level0_row24" class="row_heading level0 row24" >24</th>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row24_col0" class="data row24 col0" >DecisionTreeRegressor</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row24_col1" class="data row24 col1" >5</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row24_col2" class="data row24 col2" >RandomizedSearchCV</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row24_col3" class="data row24 col3" >0.175786</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row24_col4" class="data row24 col4" >0.000734</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row24_col5" class="data row24 col5" >4.150990</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row24_col6" class="data row24 col6" >1.483210</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row24_col7" class="data row24 col7" >46.003787</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row24_col8" class="data row24 col8" >4.848605</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row24_col9" class="data row24 col9" >2.300000</td>
+                        <td id="T_4645db28_951c_11ea_899b_acde48001122row24_col10" class="data row24 col10" >1.000000</td>
+            </tr>
+    </tbody></table>
